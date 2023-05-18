@@ -1,0 +1,68 @@
+<style>
+    .card-container {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    
+    .card {
+      flex: 0 0 auto;
+      margin-right: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .card:hover {
+      transform: scale(1.1);
+    }
+    
+    .card .card-side {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card .card-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .card .card-side.back {
+      transform: rotateY(180deg);
+    }
+    
+    .card .card-side.back img {
+      transform: rotateY(180deg);
+    }
+    </style>
+    
+    <div class="card-container">
+      <div class="card">
+        <div class="card-side front">
+          <img src="images/11.png" alt="">
+        </div>
+        <div class="card-side back">
+          <img src="images/12.png" alt="">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="images/1.png" alt="">
+        </div>
+        <div class="card-side back">
+          <img src="images/2.png" alt="">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="images/3.png" alt="">
+        </div>
+        <div class="card-side back">
+          <img src="images/4.png" alt="">
+        </div>
+      </div>
+    </div>
+    
